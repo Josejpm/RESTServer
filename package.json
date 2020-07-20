@@ -4,7 +4,7 @@
   "description": "Learning REST server with mongoDB & Node",
   "main": "index.js",
   "scripts": {
-    "start":"node servidor/server.js",
+    "start":"node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jose Rangel",
