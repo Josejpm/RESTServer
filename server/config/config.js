@@ -26,5 +26,8 @@ process.env.TOKEN_EXPIRATION = 60 * 60 * 2
 //* ================= Config del seed de autenticacion
 process.env.SEED = process.env.SEED || 'secret-in-development'
 
+//* ================= Config del Client Id de google
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '408285479293-b0vk039iu7b76lsi330hr7q58p2hfkd6.apps.googleusercontent.com'
 
 

@@ -2,6 +2,7 @@ require('./config/config') // Contiene las configuraciones del servidor
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const path = require('path');
 
 
 //Instancia de express
@@ -15,6 +16,8 @@ app.use(bodyParser.json());
 //Llamado para el uso global de las rutas
 app.use(require('./routes/index'));
 
+//Habilitar la carpeta public
+app.use( express.static( path.resolve (__dirname , '../public') ));
 
 // Conexion del servidor a la BD con mongoose
 mongoose.connect(process.env.URLDB,{
