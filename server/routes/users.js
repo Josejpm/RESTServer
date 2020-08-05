@@ -84,6 +84,8 @@ app.put('/user/:id',[verifyToken,verifyUser], (req,res)=>{
     //Para obtener los parametros desde el url se usa req.params.id, siendo id el definido en el URL de la peticion
     const userId = req.params.id
     //const body = req.body
+
+    //Liberia que escoge que se va a traer de un objeto, es decir lo que se permite modificar
     const body = _.pick(req.body,['name','email','image','role','state']);
 
 
